@@ -1,0 +1,90 @@
+.boxForm {
+	background: #ffffff;
+	padding: 40px 50px;
+}
+.boxForm h2{
+	font-size: 22px;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+.btnSubmit {
+	width: 100%;
+  height: 37px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  background: #03a2de;
+  text-align: center;
+  cursor: pointer;
+}
+.btnSubmit span {
+	color: #ffffff;
+  cursor: pointer;
+  display: block;
+}
+.labelForm div {
+	position: relative;
+}
+.labelForm input:focus {
+	box-shadow: none;
+}
+.labelForm input[name=email]:focus ~ span, .labelForm input[name=password]:focus ~ span, .labelForm input[name=username]:focus ~ span, .labelForm input[name=email]:-webkit-autofill ~ span, .labelForm input[name=password]:-webkit-autofill ~ span, .labelForm input[name=username]:-webkit-autofill ~ span, .labelForm input:focus:valid ~ span {
+	top: -10px;
+	left: 5px;
+	color: #515151;
+	font-size: 13px;
+	opacity: 1;
+	background-color: #ffffff;
+	height: 15px;
+	padding: 2px 7px;
+}
+input:-internal-autofill-selected {
+	background: #ffffff !important;
+}
+
+/* .labelForm input:focus ~ span, .labelForm input:not(:focus):valid ~ span {
+	top: -10px;
+	left: 5px;
+	color: #515151;
+	font-size: 13px;
+	opacity: 1;
+	background-color: #ffffff;
+	height: 15px;
+	padding: 2px 7px;
+} */
+span.ph {
+	text-transform: capitalize;
+	position: absolute;
+	pointer-events: none;
+	left: 15px;
+	font-size: 14px;
+	top: 8px;
+	transition: 0.2s ease all;
+}
+.colBtn {
+	width: 90px;
+	position: relative;
+}
+.colBtn .spinner {
+	top: 0px;
+	width: 100%;
+	height: 37px;
+	opacity: 0.6;
+	display: block;
+	text-align: center;
+	border-radius: 4px;
+	position: absolute;
+	background: #000000;
+	cursor: not-allowed;
+}
+.colBtn .spinner i{
+	top: 6px;
+  color: #ffffff;
+	position: relative;
+}
+input.is-danger {
+	border: 1px solid #e80000;
+}
+span.is-danger {
+	color: #e80000;
+	font-size: 12px;
+}
