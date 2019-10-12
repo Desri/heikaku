@@ -19,12 +19,6 @@ export default {
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css'},
       { rel: "stylesheet", type: 'text/css', href: "/css/global.css" },
     ],
-    script: [
-      {
-        src: "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js",
-        type: "text/javascript"
-      }
-    ]
   },
 
   /*
