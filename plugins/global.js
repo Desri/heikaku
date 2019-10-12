@@ -108,7 +108,6 @@ Vue.mixin({
               resolve(response.data)
             }
             reject(response.message)
-            console.log(response.data)
           }, (error) => {
             // IF CODE 422 Form Validate
             let status = error.response.status;

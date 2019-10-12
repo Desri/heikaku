@@ -1,0 +1,10 @@
+#searchJob {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: $bg-search;
+  box-shadow: 0 5px 10px hsla(0,0%,87.1%,.5);
+  .ant-form-item {
+    margin: 5px 0px;
+  }
+}

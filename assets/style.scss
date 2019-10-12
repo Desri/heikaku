@@ -1,0 +1,19 @@
+$blue-color: #27aae1;
+$green-color: #13ce66;
+$red-color: #ff0000;
+$grey-color: #969696;
+$white-color: #969696;
+$black-color: #222222;
+$bg-search: #ffffff;
+$header-color: #e6b707;
+
+
+// Media Query For Mobile Screen
+$small-phone: "screen and (max-width : 320px)";
+$large-phone: "screen and (max-width : 480px)";
+
+//COMPONENT
+@import 'components/header.scss';
+@import 'components/search.scss';
+@import 'components/modalFilter.scss';
+@import 'components/list.scss';

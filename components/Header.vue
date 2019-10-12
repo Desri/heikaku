@@ -1,22 +1,33 @@
 <template>
 	<header class="sticky-top">
-		<div class="headTop">
-			<div class="nav-uper container">
-				<div class=" col-xl-10 col-lg-6">
-					<nuxt-link to="/">
-						<img src="@/static/assets/logo.png" class="img-fluid" style="height: 60px;"/>
-					</nuxt-link>
-				</div>
-				<div v-if="authenticated" class="col-xl-2 col-lg-2 pl-0 d-flex justify-content-end">
-					<div class="btn btn-outline-login btnLogout" @click.prevent="signOut"><span>Logout</span></div>
-				</div>
-				<div v-else class="col-xl-2 col-lg-3 pl-0 d-flex justify-content-end">
-					<nuxt-link to="/login" class="btn btn-outline-login mr-2">Masuk</nuxt-link>
-					<nuxt-link to="/signup" class="btn btn-outline-login">Daftar</nuxt-link>
-				</div>
-			</div>
-		</div>
 
+		<b-navbar toggleable="lg" type="dark">
+    	<b-navbar-brand href="#">Your Work</b-navbar-brand>
+    	<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+	    <b-collapse id="nav-collapse" is-nav>
+	      <b-navbar-nav>
+	        <b-nav-item href="#">JOB</b-nav-item>
+					<b-nav-item href="#">COUPON</b-nav-item>
+					<b-nav-item href="#">PLACE</b-nav-item>
+	      </b-navbar-nav>
+
+	      <!-- Right aligned nav items -->
+	      <b-navbar-nav class="ml-auto">
+					<b-nav-item-dropdown text="Lang" right>
+	          <b-dropdown-item href="#">EN</b-dropdown-item>
+	          <b-dropdown-item href="#">ES</b-dropdown-item>
+	          <b-dropdown-item href="#">RU</b-dropdown-item>
+	          <b-dropdown-item href="#">FA</b-dropdown-item>
+	        </b-nav-item-dropdown>
+
+					<b-nav-form>
+	          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
+	        </b-nav-form>
+
+	      </b-navbar-nav>
+	    </b-collapse>
+		</b-navbar>
 	</header>
 </template>
 
@@ -32,9 +43,7 @@ export default {
 </script>
 
 <style scoped>
-	header {
-		background: #ffffff;
-	}
+
 	#mainNav {
 		padding-bottom: 0px;
 	}
@@ -110,13 +119,7 @@ export default {
 	.headTop {
 		border-bottom: 2px solid #319a75;
 	}
-	.nav-uper{
-		display: flex;
-		align-items: center;
-		height: 85px;
-		background: #ffffff;
-		color: #fff;
-	}
+
 	a {
 		text-decoration: none;
 	}

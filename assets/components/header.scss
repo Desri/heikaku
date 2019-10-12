@@ -1,0 +1,9 @@
+header {
+  background: $header-color;
+  .nav-uper{
+    display: flex;
+    align-items: center;
+    height: 85px;
+    color: $white-color;
+  }
+}

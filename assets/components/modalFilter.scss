@@ -1,0 +1,56 @@
+.modalFilter {
+  width: 750px !important;
+  .ant-modal-content {
+    border-radius: 15px;
+    span {
+      &.ant-modal-close-x {
+        i {
+          top: -5px;
+          right: 7px;
+          width: 20px;
+          height: 20px;
+          padding: 0px;
+          color: #b1b1b1;
+          font-size: 11px;
+          line-height: 16px;
+          border-radius: 50%;
+          position: relative;
+          border: 1px solid #dddddd;
+        }
+      }
+    }
+    .ant-modal-header {
+      border-radius: 15px 15px 0 0;
+    }
+    .ant-modal-body {
+      padding-top: 0px;
+      form {
+        .colList {
+          padding-top: 10px;
+          margin-right: 20px;
+          border-right: 1px solid #f5f5f5;
+          label {
+            &.labelFilter {
+              font-weight: 600;
+              color: $black-color;
+              margin-bottom: 10px;
+            }
+          }
+          .listCheck {
+            margin-bottom: 7px;
+            span {
+              &.textFilter {
+                font-size: 13px;
+                font-weight: 600;
+                color: $black-color;
+              }
+            }
+          }
+        }
+        .noBorder {
+          border: 0px;
+        }
+      }
+    }
+  }
+}

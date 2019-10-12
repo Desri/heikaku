@@ -17,7 +17,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.8.2/css/all.css'},
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css'},
-      { rel: "stylesheet", type: 'text/css', href: "/css/global.css" },
     ],
   },
 
@@ -26,18 +25,18 @@ export default {
   */
   loading: { color: '#008080' },
 
+  /*
+  ** Global CSS
+  */
+  css: [
+    '~/assets/style.scss'
+  ],
+
   router: {
     middleware: [
       'clearValidationErrors'
     ]
   },
-
-  /*
-  ** Global CSS
-  */
-  css: [
-    '~/assets/style.css'
-  ],
 
   /*
   ** Plugins to load before mounting the App
@@ -47,7 +46,8 @@ export default {
     '~/plugins/global',
     '~/plugins/axios',
     '~/plugins/mixins/user',
-    '~/plugins/vue-scrollto'
+    '~/plugins/vue-scrollto',
+    { src: '~plugins/ant.js'},
   ],
 
   auth: {
@@ -55,13 +55,13 @@ export default {
       local: {
         endpoints: {
           login: {
-            url: 'api/login', method: 'post', propertyName: 'token'
+            url: '', method: 'post', propertyName: 'token'
           },
           user: {
-            url: 'api/profile', method: 'get', propertyName: false
+            url: '', method: 'get', propertyName: false
           },
           logout: {
-            url: 'api/logout', method: 'get'
+            url: '', method: 'get'
           },
         }
       }
@@ -85,11 +85,10 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/auth',
     'vue-sweetalert2/nuxt',
-    'nuxt-validate',
   ],
 
   axios: {
-    baseURL: 'http://testfe.recruiting.honestmining.org/',
+    baseURL: '',
     proxyHeaders: false,
     credentials: false,
   },
