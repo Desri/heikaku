@@ -9,16 +9,16 @@
       <b-container class="customeContainer">
         <div class="heading">
           <b-row>
-            <b-col sm="12" lg="6">
+            <div class="col-9 col-sm 6 col-lg-6">
               <div class="textHeading">
                 <h1>Lowongan Kerja Terbaru dan Terupdate</h1>
               </div>
-            </b-col>
-            <b-col sm="12" lg="6">
+            </div>
+            <div class="col-3 col-sm 6 col-lg-6">
               <div class="filter">
                 <label @click="showModal">Filter <i class="fa fa-angle-down" aria-hidden="true"></i></label>
               </div>
-            </b-col>
+            </div>
           </b-row>
         </div>
         <listLoker/>
@@ -39,7 +39,7 @@
         @submit="handleFilter"
       >
         <a-row>
-          <a-col :span="8">
+          <a-col :xs="24" :md="8">
             <div class="colList">
               <label class="labelFilter">Fasilitas</label>
               <div class="listFilter">
@@ -59,7 +59,7 @@
               </div>
             </div>
           </a-col>
-          <a-col :span="8">
+          <a-col :xs="24" :md="8">
             <div class="colList">
               <label class="labelFilter">Benefit</label>
               <div class="listFilter">
@@ -79,7 +79,7 @@
               </div>
             </div>
           </a-col>
-          <a-col :span="8">
+          <a-col :xs="24" :md="8">
             <div class="colList noBorder">
               <label class="labelFilter">Minimal Pengalaman Kerja</label>
               <div class="listFilter">

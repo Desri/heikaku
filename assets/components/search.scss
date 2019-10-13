@@ -1,4 +1,7 @@
 #searchJob {
+  @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+    display: none;
+  }
   .row {
     padding: 0px 40px;
   }

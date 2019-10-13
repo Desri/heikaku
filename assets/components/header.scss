@@ -3,6 +3,12 @@ header {
   .navbar-custome{
     padding-left: 40px;
     padding-right: 40px;
+    @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+      padding: 0.5rem 1rem;
+      .navbar-toggler {
+        border: 0px;
+      }
+    }
     a.navbar-brand {
       font-size: 32px;
       span {
@@ -12,6 +18,9 @@ header {
     }
     .navbar-collapse {
       margin-left: 30px;
+      @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+        margin-left: 0px;
+      }
     }
     .navbar-nav {
       li {
@@ -19,6 +28,90 @@ header {
         .nav-link {
           color: $bg-search;
       		font-size: 15px;
+        }
+      }
+      .btnCompany {
+        padding: 5px 15px;
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+        @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+          padding: 7px 15px;
+          text-align: center;
+        }
+      }
+      .colAction {
+        width: 167px;
+        padding: 0.5rem 1rem;
+        @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+          width: 100%;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+        .colBtns {
+          height: 34px;
+          padding: 5px;
+          overflow: hidden;
+          border-radius: 10px;
+          background: $bg-search;
+          a {
+            font-size: 13px;
+            color: $header-color;
+          }
+          .btnSignin {
+            float: left;
+            width: 49%;
+            text-align: center;
+          }
+          .line {
+            float: left;
+            width: 1.1px;
+            height: 100%;
+            background: $header-color;
+          }
+          .btnSignup {
+            float: left;
+            width: 49%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .ml-auto {
+      li {
+        margin-right: 0px;
+        &.b-nav-dropdown {
+          padding: 0.5rem 10px;
+          a {
+            span {
+              font-size: 13px;
+              img {
+                top: -1px;
+                right: 1px;
+                width: 18px;
+                position: relative;
+              }
+            }
+          }
+        }
+      }
+      .dropdown-menu {
+        top: 43px;
+        padding: 0px;
+        min-width: 5rem;
+        margin-right: 15px;
+        li {
+          a {
+            font-size: 13px;
+            padding: 5px 15px;
+            &:hover {
+              border-radius: 4px;
+            }
+            img {
+              top: -1px;
+              width: 20px;
+              position: relative;
+            }
+          }
         }
       }
     }

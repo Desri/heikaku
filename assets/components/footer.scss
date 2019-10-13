@@ -1,6 +1,9 @@
 footer {
   padding-top: 2rem;
   box-shadow: 0 -5px 5px -5px #dddddd;
+  @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+    padding-bottom: 3rem;
+  }
   h3 {
     font-size: 16px;
     margin-bottom: 10px;
@@ -81,6 +84,54 @@ footer {
             }
           }
         }
+      }
+    }
+  }
+  #search-mobile {
+    display: none;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    color: $bg-search;
+    line-height: 45px;
+    text-align: center;
+    @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+      display: block;
+    }
+    .colSearchMobile {
+      padding: 15px 30px;
+      background: #5c5c5c;
+      form {
+        .ant-form-item {
+          .ant-input {
+            height: 43px;
+          }
+          .ant-select-selection--single {
+            height: 43px;
+            .ant-select-selection__rendered {
+              line-height: 42px;
+            }
+          }
+          @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+            margin-bottom: 0px;
+          }
+        }
+        button {
+          width: 100%;
+          background: $black-color;
+          border-color: $black-color;
+          height: 40px;
+          font-size: 17px;
+        }
+      }
+    }
+    .btnSearchMobile {
+      background: $black-color;
+      span {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
       }
     }
   }

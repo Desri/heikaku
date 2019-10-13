@@ -48,28 +48,16 @@
 	export default {
 		data() {
 			return {
-				listJob: [],
+
 			}
 		},
 		computed: {
-
+			...mapGetters({
+        listJob: 'jobList/listJob',
+			}),
 		},
 		async mounted() {
-			this.getData('/api/list.json').then(
-				(data) => {
-					this.listJob = data
-				},
-				(error) => {
-					this.$swal({
-						toast: true,
-						position: 'top-end',
-						showConfirmButton: false,
-						timer: 2000,
-						type: 'error',
-						text: 'Something went wrong!'
-					})
-				}
-			)
+			await this.$store.dispatch('jobList/GET_LIST_JOB');
 		},
 		methods: {
 

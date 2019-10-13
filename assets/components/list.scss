@@ -1,6 +1,9 @@
 #list-loker {
   padding-top: 4rem;
   padding-bottom: 1rem;
+  @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+    padding-top: 0px;
+  }
   @media (min-width: 1200px) {
     .customeContainer {
       max-width: 950px;
@@ -13,11 +16,21 @@
       h1 {
         font-size: 16px;
         margin-bottom: 0px;
+        @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+          font-size: 13px;
+        }
       }
     }
     .filter {
+      @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+        margin-top: -4px;
+      }
       text-align: right;
       label {
+        @media only screen and (min-width : $portrait) and (max-width : $landscape) {
+          font-size: 13px;
+          font-weight: 600;
+        }
         cursor: pointer;
         margin-bottom: 0px;
         color: $blue-color;
@@ -39,10 +52,14 @@
         }
         .mediaList {
           overflow: hidden;
+          position: relative;
           .img {
             width: 25%;
             float: left;
+            height: 100%;
+            display: flex;
             padding: 1rem;
+            position: absolute;
             align-items: center;
             img {
               width: 100%;
@@ -52,6 +69,7 @@
             width: 75%;
             float: left;
             height: 100%;
+            margin-left: 25%;
             padding-top: 10px;
             padding-left: 15px;
             position: relative;

@@ -11,8 +11,9 @@ $header-color: #e6b707;
 
 
 // Media Query For Mobile Screen
-$small-phone: "screen and (max-width : 320px)";
-$large-phone: "screen and (max-width : 480px)";
+//$small-phone: "screen and (min-width : 320px) and (max-width : 480px)";
+$portrait: "320px";
+$landscape: "480px";
 
 //COMPONENT
 @import 'components/header.scss';

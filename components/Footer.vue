@@ -8,7 +8,6 @@
 						<p>YourWork adalah sebuah perusahaan penyedia informasi lowongan pekerjaan terkemuka di Asia yang menghubungkan para pengguna dengan bisnis untuk meningkatkan taraf hidup dengan melalui karier yang lebih baik.</p>
 					</div>
 				</b-col>
-
 				<b-col lg="3" style="margin-bottom: 20px;">
 					<div class="footerLink">
 						<h3>USER</h3>
@@ -20,7 +19,6 @@
 						</ul>
 					</div>
 				</b-col>
-
 				<b-col lg="4" style="margin-bottom: 20px;">
 					<div class="footerSosmed">
 						<h3>IKUTI KAMI</h3>
@@ -70,9 +68,45 @@
 						</ul>
 					</div>
 				</b-col>
-
 			</b-row>
 		</b-container>
 
+		<section id="search-mobile">
+			<div v-if="isShow" class="colSearchMobile">
+				<searchLoker/>
+			</div>
+			<div class="btnSearchMobile">
+				<span v-if="!isShow" @click="isShow = !isShow">Search</span>
+				<span v-else @click="isShow = !isShow">Close</span>
+			</div>
+		</section>
+
 	</footer>
 </template>
+
+<script>
+  import {mapGetters} from 'vuex'
+  import searchLoker from '@/components/searchLoker'
+  export default {
+    components:{
+			searchLoker,
+    },
+    data() {
+      return {
+        visible: false,
+				isShow:false,
+      }
+    },
+    computed: {
+
+		},
+    async mounted() {
+
+    },
+    methods: {
+
+
+    },
+
+  }
+</script>
