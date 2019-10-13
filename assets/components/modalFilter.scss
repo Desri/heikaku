@@ -2,21 +2,26 @@
   width: 750px !important;
   .ant-modal-content {
     border-radius: 15px;
-    span {
-      &.ant-modal-close-x {
-        i {
-          top: -5px;
-          right: 7px;
-          width: 20px;
-          height: 20px;
-          padding: 0px;
-          color: #b1b1b1;
-          font-size: 11px;
-          line-height: 16px;
-          border-radius: 50%;
-          position: relative;
-          border: 1px solid #dddddd;
+    button {
+      span {
+        &.ant-modal-close-x {
+          i {
+            top: -5px;
+            right: 7px;
+            width: 20px;
+            height: 20px;
+            padding: 0px;
+            color: #b1b1b1;
+            font-size: 11px;
+            line-height: 16px;
+            border-radius: 50%;
+            position: relative;
+            border: 1px solid #dddddd;
+          }
         }
+      }
+      &:focus {
+        outline: 0px;
       }
     }
     .ant-modal-header {
@@ -37,7 +42,7 @@
             }
           }
           .listCheck {
-            margin-bottom: 7px;
+            margin-bottom: 8px;
             span {
               &.textFilter {
                 font-size: 13px;
@@ -49,6 +54,25 @@
         }
         .noBorder {
           border: 0px;
+        }
+        .colBtn {
+          margin-top: 10px;
+          .ant-form-item {
+            margin-bottom: 3px;
+            button {
+              width: 100%;
+              border-radius: 10px;
+              border-color: $black-color;
+              background-color: $black-color;
+              &[disabled] {
+                color: $bg-search;
+              }
+              &:hover {
+                color: $black-color;
+                background-color: $bg-search;
+              }
+            }
+          }
         }
       }
     }

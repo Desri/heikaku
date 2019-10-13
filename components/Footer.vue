@@ -1,81 +1,42 @@
 <template>
 	<footer>
-		<div class="bg-footer">
-			<!-- <b-container> -->
-				<!-- <b-row> -->
-					<!-- <b-col lg="6" style="margin-bottom: 20px;">
-						<div class="topFooter">
-							<div class="titleFooter">
-								<h3>FOLLOW & SUBSCRIBE</h3>
-							</div>
-						</div>
+		<b-container>
+			<b-row>
+				<b-col lg="4" style="margin-bottom: 20px;">
+					<div class="footerAbout">
+						<h3>YourWORK</h3>
+						<p>YourWork adalah sebuah perusahaan penyedia informasi lowongan pekerjaan terkemuka di Asia yang menghubungkan para pengguna dengan bisnis untuk meningkatkan taraf hidup dengan melalui karier yang lebih baik.</p>
+					</div>
+				</b-col>
 
-						<div class="topFooter">
-							<div class="titleFooter">
-								<h3>INFORMASI</h3>
-							</div>
-						</div>
+				<b-col lg="4" style="margin-bottom: 20px;">
+					<div class="footerLink">
+						<h3>USER</h3>
+						<ul>
+							<li><nuxt-link :to="`#`">About Us</nuxt-link></li>
+							<li><nuxt-link :to="`#`">Register User</nuxt-link></li>
+							<li><nuxt-link :to="`#`">Terms & Conditions User</nuxt-link></li>
+							<li><nuxt-link :to="`#`">FAQ User</nuxt-link></li>
+						</ul>
+					</div>
+				</b-col>
 
-					</b-col> -->
-					<!-- <b-col lg="6" style="margin-bottom: 20px;">
-						<div class="topFooter">
-							<div class="titleFooter">
-								<h3>PEMBAYARAN</h3>
-							</div>
-							<img src="@/static/assets/payment.png" class="img-payment">
-						</div>
+				<b-col lg="4" style="margin-bottom: 20px;">
+					<div class="footerSosmed">
+						<h3>IKUTI KAMI</h3>
+						<ul>
+							<!-- <li><a href="#" target="_blank"><fa :icon="fas.faEnvelope"/></a></li>
+							<li><a href="#" target="_blank"><fa :icon="fas.faEnvelope"/></a></li>
+							<li><a href="#" target="_blank"><fa :icon="fas.faEnvelope"/></a></li>
+							<li><a href="#" target="_blank"><fa :icon="fas.faEnvelope"/></a></li>
+							<li><a href="#" target="_blank"><fa :icon="fas.faEnvelope"/></a></li>
+							<li><a href="#" target="_blank"><fa :icon="fas.faEnvelope"/></a></li> -->
+						</ul>
+					</div>
+				</b-col>
 
-						<div class="topFooter">
-							<div class="titleFooter">
-								<h3>JASA PENGIRIMAN</h3>
-							</div>
-							<img src="@/static/assets/carrier.png" class="img-payment">
-						</div>
-					</b-col> -->
+			</b-row>
+		</b-container>
 
-				<!-- </b-row> -->
-			<!-- </b-container> -->
-			<div class="text-center foterBtm">
-				<small>&copy 2019 Design by. Dery Aprianto</small>
-			</div>
-		</div>
 	</footer>
 </template>
-
-<style scoped>
-	.hr-bot{
-		border-top: 1px solid #dadada;
-	}
-	.img-payment{
-		height: 40px;
-	}
-	.bg-footer {
-		border-top: 5px solid #4b56dc;
-	}
-	.foterBtm {
-		padding: 15px;
-		background: #020a6d;
-	}
-	
-	.footerText h2 {
-		font-size: 14px;
-		margin-bottom: 15px;
-	}
-	.footerText small {
-		font-size: 10px;
-	}
-	.footerText .descFooter p {
-		font-size: 9px;
-    margin-bottom: 7px;
-	}
-
-
-	.btn-hijau {
-		background: #008080;
-		padding: 6px;
-		color: #fff;
-	}
-	.btn-hijau:hover {
-		background: #006969;
-	}
-</style>

@@ -1,0 +1,50 @@
+
+{
+  "success":true,
+  "data":[
+    {
+      "id": 1,
+      "name": "Parkir Khusus Karyawan"
+    },
+    {
+      "id": 2,
+      "name": "Antar Jemput Karyawan"
+    },
+    {
+      "id": 3,
+      "name": "Ruangan Kerja Ber-AC"
+    },
+    {
+      "id": 4,
+      "name": "Internet 24 jam"
+    },
+    {
+      "id": 5,
+      "name": "Telepon Kantor"
+    },
+    {
+      "id": 6,
+      "name": "Ruangan Meeting"
+    },
+    {
+      "id": 7,
+      "name": "Ruangan Kerja Outdoor"
+    },
+    {
+      "id": 8,
+      "name": "Ruangan Makan"
+    },
+    {
+      "id": 9,
+      "name": "Seragam Bebas"
+    },
+    {
+      "id": 10,
+      "name": "Cemilan Gratis"
+    },
+    {
+      "id": 11,
+      "name": "Kartu Nama Karyawan"
+    }
+  ]
+}

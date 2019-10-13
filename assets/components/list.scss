@@ -1,5 +1,11 @@
 #list-loker {
   padding-top: 4rem;
+  padding-bottom: 1rem;
+  @media (min-width: 1200px) {
+    .customeContainer {
+      max-width: 950px;
+    }
+  }
   .heading {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -21,6 +27,7 @@
   .listCard {
     .card {
       border-radius: 20px;
+      box-shadow: 5px -5px 5px -5px #dddddd;
       .card-header {
         background: transparent;
       }

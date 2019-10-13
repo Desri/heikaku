@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
 Vue.mixin({
   components: {
@@ -9,6 +10,10 @@ Vue.mixin({
       route_path: '',
       error: null
     }
+  },
+
+  computed: {
+    fas () { return fas },
   },
 
   mounted() {

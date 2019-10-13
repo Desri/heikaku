@@ -1,7 +1,7 @@
 <template>
 
 	<b-row>
-		<b-col sm="12" lg="6" v-for="data in listJob" :key="data.id" class="mb-4">
+		<b-col sm="12" lg="6" v-for="data in listJob" :key="data.id" class="mb-3 pl-2 pr-2">
 			<div class="listCard">
 				<b-card header-tag="header" footer-tag="footer">
 		      <template v-slot:header>
@@ -52,7 +52,7 @@
 
 		},
 		async mounted() {
-			this.getData('/generated.json').then(
+			this.getData('/api/list.json').then(
 				(data) => {
 					this.listJob = data
 				},

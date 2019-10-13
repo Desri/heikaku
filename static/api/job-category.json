@@ -1,0 +1,54 @@
+
+{
+  "success":true,
+  "data":[
+    {
+      "id": 1,
+      "name": "Acara"
+    },
+    {
+      "id": 2,
+      "name": "Administrasi"
+    },
+    {
+      "id": 3,
+      "name": "Desain"
+    },
+    {
+      "id": 4,
+      "name": "Digital Influencer"
+    },
+    {
+      "id": 5,
+      "name": "Hukum"
+    },
+    {
+      "id": 6,
+      "name": "Human Resource"
+    },
+    {
+      "id": 7,
+      "name": "Jurnalistik"
+    },
+    {
+      "id": 8,
+      "name": "Keamanan"
+    },
+    {
+      "id": 9,
+      "name": "Kecantikan"
+    },
+    {
+      "id": 10,
+      "name": "Kesehatan"
+    },
+    {
+      "id": 11,
+      "name": "Keuangan"
+    },
+    {
+      "id": 12,
+      "name": "Komputer"
+    }
+  ]
+}

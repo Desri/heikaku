@@ -1,9 +1,26 @@
 header {
   background: $header-color;
-  .nav-uper{
-    display: flex;
-    align-items: center;
-    height: 85px;
-    color: $white-color;
+  .navbar-custome{
+    padding-left: 40px;
+    padding-right: 40px;
+    a.navbar-brand {
+      font-size: 32px;
+      span {
+        font-weight: 700;
+        color: $black-color;
+      }
+    }
+    .navbar-collapse {
+      margin-left: 30px;
+    }
+    .navbar-nav {
+      li {
+        margin-right: 25px;
+        .nav-link {
+          color: $bg-search;
+      		font-size: 15px;
+        }
+      }
+    }
   }
 }

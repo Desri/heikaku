@@ -1,0 +1,38 @@
+
+{
+  "success":true,
+  "data":[
+    {
+      "id": 1,
+      "name": "Semua"
+    },
+    {
+      "id": 2,
+      "name": "SMP/SMA/SMK"
+    },
+    {
+      "id": 3,
+      "name": "Fresh Graduate"
+    },
+    {
+      "id": 4,
+      "name": "Junior"
+    },
+    {
+      "id": 5,
+      "name": "Experience"
+    },
+    {
+      "id": 6,
+      "name": "Senior"
+    },
+    {
+      "id": 7,
+      "name": "Manager"
+    },
+    {
+      "id": 8,
+      "name": "Director"
+    }
+  ]
+}

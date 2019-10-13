@@ -1,0 +1,54 @@
+
+{
+  "success":true,
+  "data":[
+    {
+      "id": 1,
+      "name": "Aceh"
+    },
+    {
+      "id": 2,
+      "name": "Bali"
+    },
+    {
+      "id": 3,
+      "name": "Banten"
+    },
+    {
+      "id": 4,
+      "name": "Bengkulu"
+    },
+    {
+      "id": 5,
+      "name": "DI Yogyakarta"
+    },
+    {
+      "id": 6,
+      "name": "DKI Jakarta"
+    },
+    {
+      "id": 7,
+      "name": "Gorontalo"
+    },
+    {
+      "id": 8,
+      "name": "Jambi"
+    },
+    {
+      "id": 9,
+      "name": "Jawa Barat"
+    },
+    {
+      "id": 10,
+      "name": "Jawa Tengah"
+    },
+    {
+      "id": 11,
+      "name": "Jawa Timur"
+    },
+    {
+      "id": 12,
+      "name": "Kalimantan Barat"
+    }
+  ]
+}

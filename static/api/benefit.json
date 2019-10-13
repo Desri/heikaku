@@ -1,0 +1,50 @@
+
+{
+  "success":true,
+  "data":[
+    {
+      "id": 1,
+      "name": "Kontrak Kerja Yang Sah"
+    },
+    {
+      "id": 2,
+      "name": "Waktu Kerja 5 Hari / Minggu"
+    },
+    {
+      "id": 3,
+      "name": "8 Jam Kerja / Hari"
+    },
+    {
+      "id": 4,
+      "name": "Komisi Penjualan"
+    },
+    {
+      "id": 5,
+      "name": "Kenaikan Gaji"
+    },
+    {
+      "id": 6,
+      "name": "Tunjangan Kesehatan"
+    },
+    {
+      "id": 7,
+      "name": "Tunjangan Hari Tua"
+    },
+    {
+      "id": 8,
+      "name": "Cuti Menikah"
+    },
+    {
+      "id": 9,
+      "name": "Izin Tidur Siang Sejenak"
+    },
+    {
+      "id": 10,
+      "name": "Hak Cuti Karyawan"
+    },
+    {
+      "id": 11,
+      "name": "Izin Sholat 5 Waktu"
+    }
+  ]
+}

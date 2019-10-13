@@ -6,7 +6,7 @@
     </section>
 
     <section id="list-loker">
-      <b-container>
+      <b-container class="customeContainer">
         <div class="heading">
           <b-row>
             <b-col sm="12" lg="6">
@@ -43,8 +43,7 @@
             <div class="colList">
               <label class="labelFilter">Fasilitas</label>
               <div class="listFilter">
-
-                <div class="listCheck">
+                <div class="listCheck" v-for="data in facilities" :key="data.id">
                   <a-checkbox
                     v-decorator="[
                       'remember',
@@ -54,401 +53,68 @@
                       }
                     ]"
                   >
-                    <span class="textFilter">Parkir Khusus Karyawan</span>
+                    <span class="textFilter">{{data.name}}</span>
                   </a-checkbox>
                 </div>
-                <div class="listCheck">
-                  <a-checkbox
-                    v-decorator="[
-                      'remember',
-                      {
-                        valuePropName: 'checked',
-                        initialValue: true,
-                      }
-                    ]"
-                  >
-                    <span class="textFilter">Antar Jemput Karyawan</span>
-                  </a-checkbox>
-                </div>
-                <div class="listCheck">
-                  <a-checkbox
-                    v-decorator="[
-                      'remember',
-                      {
-                        valuePropName: 'checked',
-                        initialValue: true,
-                      }
-                    ]"
-                  >
-                    <span class="textFilter">Ruangan Kerja Ber-AC</span>
-                  </a-checkbox>
-                </div>
-                <div class="listCheck">
-                  <a-checkbox
-                    v-decorator="[
-                      'remember',
-                      {
-                        valuePropName: 'checked',
-                        initialValue: true,
-                      }
-                    ]"
-                  >
-                    <span class="textFilter">Internet 24 jam</span>
-                  </a-checkbox>
-                </div>
-                <div class="listCheck">
-                  <a-checkbox
-                    v-decorator="[
-                      'remember',
-                      {
-                        valuePropName: 'checked',
-                        initialValue: true,
-                      }
-                    ]"
-                  >
-                    <span class="textFilter">Telepon Kantor</span>
-                  </a-checkbox>
-                </div>
-                <div class="listCheck">
-                  <a-checkbox
-                    v-decorator="[
-                      'remember',
-                      {
-                        valuePropName: 'checked',
-                        initialValue: true,
-                      }
-                    ]"
-                  >
-                    <span class="textFilter">Ruangan Meeting</span>
-                  </a-checkbox>
-                </div>
-                <div class="listCheck">
-                  <a-checkbox
-                    v-decorator="[
-                      'remember',
-                      {
-                        valuePropName: 'checked',
-                        initialValue: true,
-                      }
-                    ]"
-                  >
-                    <span class="textFilter">Ruangan Kerja Outdoor</span>
-                  </a-checkbox>
-                </div>
-                <div class="listCheck">
-                  <a-checkbox
-                    v-decorator="[
-                      'remember',
-                      {
-                        valuePropName: 'checked',
-                        initialValue: true,
-                      }
-                    ]"
-                  >
-                    <span class="textFilter">Ruangan Makan</span>
-                  </a-checkbox>
-                </div>
-                <div class="listCheck">
-                  <a-checkbox
-                    v-decorator="[
-                      'remember',
-                      {
-                        valuePropName: 'checked',
-                        initialValue: true,
-                      }
-                    ]"
-                  >
-                    <span class="textFilter">Seragam Bebas</span>
-                  </a-checkbox>
-                </div>
-                <div class="listCheck">
-                  <a-checkbox
-                    v-decorator="[
-                      'remember',
-                      {
-                        valuePropName: 'checked',
-                        initialValue: true,
-                      }
-                    ]"
-                  >
-                    <span class="textFilter">Cemilan Gratis</span>
-                  </a-checkbox>
-                </div>
-                <div class="listCheck">
-                  <a-checkbox
-                    v-decorator="[
-                      'remember',
-                      {
-                        valuePropName: 'checked',
-                        initialValue: true,
-                      }
-                    ]"
-                  >
-                    <span class="textFilter">Kartu Nama Karyawan</span>
-                  </a-checkbox>
-                </div>
-            </div>
+              </div>
             </div>
           </a-col>
           <a-col :span="8">
             <div class="colList">
               <label class="labelFilter">Benefit</label>
               <div class="listFilter">
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Parkir Khusus Karyawan</span>
-                </a-checkbox>
+                <div class="listCheck" v-for="data in benefit" :key="data.id">
+                  <a-checkbox
+                    v-decorator="[
+                      'remember',
+                      {
+                        valuePropName: 'checked',
+                        initialValue: true,
+                      }
+                    ]"
+                  >
+                    <span class="textFilter">{{data.name}}</span>
+                  </a-checkbox>
+                </div>
               </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Antar Jemput Karyawan</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Ruangan Kerja Ber-AC</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Internet 24 jam</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Telepon Kantor</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Ruangan Meeting</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Ruangan Kerja Outdoor</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Ruangan Makan</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Seragam Bebas</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Cemilan Gratis</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Kartu Nama Karyawan</span>
-                </a-checkbox>
-              </div>
-            </div>
             </div>
           </a-col>
           <a-col :span="8">
             <div class="colList noBorder">
               <label class="labelFilter">Minimal Pengalaman Kerja</label>
               <div class="listFilter">
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Parkir Khusus Karyawan</span>
-                </a-checkbox>
+                <div class="listCheck" v-for="data in experience" :key="data.id">
+                  <a-checkbox
+                    v-decorator="[
+                      'remember',
+                      {
+                        valuePropName: 'checked',
+                        initialValue: true,
+                      }
+                    ]"
+                  >
+                    <span class="textFilter">{{data.name}}</span>
+                  </a-checkbox>
+                </div>
+                <div class="colBtn">
+                  <a-form-item>
+          		      <a-button
+          		        type="primary"
+          		        html-type="submit"
+          		      >
+          		        Apply
+          		      </a-button>
+          		    </a-form-item>
+                  <a-form-item>
+          		      <a-button
+          		        type="primary"
+          		        html-type="submit"
+          		      >
+          		        Reset
+          		      </a-button>
+          		    </a-form-item>
+                </div>
               </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Antar Jemput Karyawan</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Ruangan Meeting</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Ruangan Kerja Outdoor</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Ruangan Makan</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Seragam Bebas</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Cemilan Gratis</span>
-                </a-checkbox>
-              </div>
-              <div class="listCheck">
-                <a-checkbox
-                  v-decorator="[
-                    'remember',
-                    {
-                      valuePropName: 'checked',
-                      initialValue: true,
-                    }
-                  ]"
-                >
-                  <span class="textFilter">Kartu Nama Karyawan</span>
-                </a-checkbox>
-              </div>
-            </div>
             </div>
           </a-col>
         </a-row>
@@ -459,6 +125,7 @@
 </template>
 
 <script>
+  import {mapGetters} from 'vuex'
   import searchLoker from '@/components/searchLoker'
   import listLoker from '@/components/listLoker'
   export default {
@@ -472,22 +139,30 @@
         form: this.$form.createForm(this),
       }
     },
+    computed: {
+			...mapGetters({
+				facilities: 'jobFilter/facilities',
+        benefit: 'jobFilter/benefit',
+        experience: 'jobFilter/experience',
+			}),
+		},
     async mounted() {
-
+      await this.$store.dispatch('jobFilter/GET_FACILITIES');
+      await this.$store.dispatch('jobFilter/GET_BENEFIT');
+      await this.$store.dispatch('jobFilter/GET_EXPERIENCE');
     },
     methods: {
       showModal() {
         this.visible = true
       },
       handleOk(e) {
-        console.log(e);
         this.visible = false
       },
       handleFilter (e) {
 	      e.preventDefault();
 	      this.form.validateFields((err, values) => {
 	        if (!err) {
-	          console.log('Received values of form: ', values);
+	          console.log('Your submit data is: ', values);
 	        }
 	      });
 	    },

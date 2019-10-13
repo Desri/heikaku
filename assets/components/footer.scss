@@ -1,0 +1,18 @@
+footer {
+  padding-top: 2rem;
+  box-shadow: 0 -5px 5px -5px #dddddd;
+  h3 {
+    font-size: 16px;
+  }
+  .footerLink {
+    ul {
+      padding-left: 0px;
+      li {
+        list-style: none;
+        a {
+          color: $font-color;
+        }
+      }
+    }
+  }
+}
