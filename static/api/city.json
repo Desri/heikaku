@@ -1,0 +1,30 @@
+
+{
+  "success":true,
+  "data":[
+    {
+      "id": 1,
+      "name": "Kab. Kepulauan Seribu"
+    },
+    {
+      "id": 2,
+      "name": "Kota Jakarta Barat"
+    },
+    {
+      "id": 3,
+      "name": "Kota Jakarta Pusat"
+    },
+    {
+      "id": 4,
+      "name": "Kota Jakarta Selatan"
+    },
+    {
+      "id": 5,
+      "name": "Kota Jakarta Timur"
+    },
+    {
+      "id": 6,
+      "name": "Kota Jakarta Utara"
+    }
+  ]
+}

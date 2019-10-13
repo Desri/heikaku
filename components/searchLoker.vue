@@ -73,19 +73,7 @@
 						optionFilterProp="children"
 						@change="changeCity"
 						:filterOption="filterOption">
-						<!-- <a-select-option v-for="item in provinces" :value="item.value">{{ item.text }}</a-select-option> -->
-						<a-select-option value="1">Aceh</a-select-option>
-						<a-select-option value="2">Bali</a-select-option>
-						<a-select-option value="3">Banten</a-select-option>
-						<a-select-option value="4">Bengkulu</a-select-option>
-						<a-select-option value="5">Di Yogyakarta</a-select-option>
-						<a-select-option value="6">DKI Jakarta</a-select-option>
-						<a-select-option value="7">Gorontalo</a-select-option>
-						<a-select-option value="8">Jambi</a-select-option>
-						<a-select-option value="9">Jawa Barat</a-select-option>
-						<a-select-option value="10">Jawa Tengah</a-select-option>
-						<a-select-option value="11">Jawa Timur</a-select-option>
-						<a-select-option value="12">Kalimantan Barat</a-select-option>
+						<a-select-option v-for="item in city" :value="item.id" :key="item.id">{{ item.name }}</a-select-option>
 					</a-select>
 				</a-form-item>
 			</b-col>
@@ -121,12 +109,14 @@
 				status: 'jobSearch/status',
 				category: 'jobSearch/category',
 				province: 'jobSearch/province',
+				city: 'jobSearch/city',
 			}),
 		},
 		async mounted() {
 			await this.$store.dispatch('jobSearch/GET_STATUS');
 			await this.$store.dispatch('jobSearch/GET_CATEGORY');
 			await this.$store.dispatch('jobSearch/GET_PROVINCE');
+			await this.$store.dispatch('jobSearch/GET_CITY');
 		},
 
 		methods: {

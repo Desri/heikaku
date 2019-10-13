@@ -2,6 +2,7 @@ export const state = () => ({
     status: {},
     category: {},
     province: {},
+    city: {},
 });
 
 export const getters =  {
@@ -14,6 +15,9 @@ export const getters =  {
   province(state) {
     return state.province;
   },
+  city(state) {
+    return state.city;
+  },
 };
 
 export const mutations = {
@@ -25,6 +29,9 @@ export const mutations = {
   },
   SET_PROVINCE(state, data) {
     state.province = data
+  },
+  SET_CITY(state, data) {
+    state.city = data
   },
 };
 
@@ -54,6 +61,16 @@ export const actions =  {
     try {
       const response = await this.$axios.$get('api/province.json')
       commit('SET_PROVINCE', response.data)
+      //console.log(response.data)
+    } catch(error) {
+      throw error
+    }
+  },
+
+  async GET_CITY({commit}) {
+    try {
+      const response = await this.$axios.$get('api/city.json')
+      commit('SET_CITY', response.data)
       //console.log(response.data)
     } catch(error) {
       throw error
