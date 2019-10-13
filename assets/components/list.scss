@@ -27,12 +27,16 @@
   .listCard {
     .card {
       border-radius: 20px;
-      box-shadow: 5px -5px 5px -5px #dddddd;
+      box-shadow: 0 0 3px #d1d1d1;
       .card-header {
         background: transparent;
       }
       .card-body {
         padding: 0px;
+        &:hover {
+          background: $bg-hover;
+          border-radius: 0px 0px 20px 20px;
+        }
         .mediaList {
           overflow: hidden;
           .img {

@@ -16,7 +16,7 @@
             </b-col>
             <b-col sm="12" lg="6">
               <div class="filter">
-                <label @click="showModal">Filter</label>
+                <label @click="showModal">Filter <i class="fa fa-angle-down" aria-hidden="true"></i></label>
               </div>
             </b-col>
           </b-row>

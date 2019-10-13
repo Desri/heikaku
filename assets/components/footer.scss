@@ -3,6 +3,13 @@ footer {
   box-shadow: 0 -5px 5px -5px #dddddd;
   h3 {
     font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .footerAbout {
+    padding-right: 4rem;
+    p {
+      font-size: 13px;
+    }
   }
   .footerLink {
     ul {
@@ -10,7 +17,69 @@ footer {
       li {
         list-style: none;
         a {
+          font-size: 13px;
           color: $font-color;
+        }
+      }
+    }
+  }
+  .footerSosmed {
+    ul {
+      padding-left: 0px;
+      li {
+        float: left;
+        list-style: none;
+        margin-right: 5px;
+        a {
+          display: block;
+          .icons {
+            width: 30px;
+            height: 30px;
+            line-height: 27px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #dddddd;
+            i {
+              color: #b5b5b5;
+              font-size: 16px;
+            }
+          }
+          .fb:hover {
+            border-color: #1877f2;
+            i {
+              color: #1877f2;
+            }
+          }
+          .ig:hover {
+            border-color: #c32aa3;
+            i {
+              color: #c32aa3;
+            }
+          }
+          .gplus:hover {
+            border-color: #ea4335;
+            i {
+              color: #ea4335;
+            }
+          }
+          .yt:hover {
+            border-color: #ff0000;
+            i {
+              color: #ff0000;
+            }
+          }
+          .twit:hover {
+            border-color: #1da1f2;
+            i {
+              color: #1da1f2;
+            }
+          }
+          .in:hover {
+            border-color: #007bb5;
+            i {
+              color: #007bb5;
+            }
+          }
         }
       }
     }

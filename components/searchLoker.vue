@@ -28,7 +28,7 @@
 						optionFilterProp="children"
 						@change="changeStatus"
 						:filterOption="filterOption">
-						<a-select-option v-for="item in status" :value="item.id">{{ item.name }}</a-select-option>
+						<a-select-option v-for="item in status" :value="item.id" :key="item.id">{{ item.name }}</a-select-option>
 					</a-select>
 				</a-form-item>
 			</b-col>
@@ -43,7 +43,7 @@
 						optionFilterProp="children"
 						@change="changeCategori"
 						:filterOption="filterOption">
-						<a-select-option v-for="item in category" :value="item.id">{{ item.name }}</a-select-option>
+						<a-select-option v-for="item in category" :value="item.id" :key="item.id">{{ item.name }}</a-select-option>
 					</a-select>
 				</a-form-item>
 			</b-col>
@@ -58,7 +58,7 @@
 						optionFilterProp="children"
 						@change="changeProvince"
 						:filterOption="filterOption">
-						<a-select-option v-for="item in province" :value="item.id">{{ item.name }}</a-select-option>
+						<a-select-option v-for="item in province" :value="item.id" :key="item.id">{{ item.name }}</a-select-option>
 					</a-select>
 				</a-form-item>
 			</b-col>
